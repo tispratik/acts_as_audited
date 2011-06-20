@@ -49,7 +49,7 @@ module ActsAsAudited
             yield :rename_parent_to_association
           else
             unless columns.include?( 'associated_id' )
-              yield :add_association_to_audits
+              yield :add_associated_to_audits
             end
           end
         end
